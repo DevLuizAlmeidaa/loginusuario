@@ -1,0 +1,17 @@
+@import url(resete.css);
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+.password-toggle-button {
+  opacity: 0.5; 
+  float: right;
+}
+
+.password-toggle-button:hover {
+  opacity: 0.8;
+}

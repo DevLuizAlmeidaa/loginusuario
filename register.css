@@ -1,0 +1,154 @@
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #E3F2FD, #0D47A1); /* Gradiente de azul claro para escuro */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.register-card {
+  width: 450px;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 2rem;
+  border-radius: 10px;
+  position: relative;
+}
+
+.register-card::before {
+  content: "";
+  position: absolute;
+  background: rgba(255, 255, 255, 0.15);
+  inset: 0;
+  transform: rotate(5deg);
+  z-index: -1;
+}
+
+.register-card-logo img {
+  width: 60px;
+}
+
+.register-card-logo,
+.register-card-header,
+.register-card-footer {
+  text-align: center;
+}
+
+.register-card a {
+  text-decoration: none;
+  color: #1565C0; /* Azul mais escuro para os links */
+}
+
+.register-card a:hover {
+  text-decoration: underline;
+}
+
+.register-card-header {
+  margin-bottom: 2rem;
+}
+
+.register-card-header h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.register-card-header h1 + div {
+  font-size: calc(1rem * 0.8);
+  opacity: 0.8;
+}
+
+.register-card-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.register-card-form .form-item {
+  position: relative;
+}
+
+.register-card-form .form-item .form-item-icon {
+  position: absolute;
+  top: 0.82rem;
+  left: 1.4rem;
+  font-size: 1.3rem;
+  opacity: 0.4;
+}
+
+.register-card-footer {
+  margin-top: 2rem;
+  font-size: calc(1rem * 0.8);
+}
+
+.register-card input[type="text"],
+.register-card input[type="password"],
+.register-card input[type="email"] {
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 1rem 1.5rem;
+  padding-left: calc(1rem * 3.5);
+  border-radius: 100px;
+  width: 100%;
+  transition: backgound 0.5s;
+}
+
+.register-card input:focus {
+  background: white;
+}
+
+.register-card-form .form-item .password-toggle-button {
+  position: absolute;
+  top: 0.82rem;
+  right: 1.4rem;
+  cursor: pointer;
+}
+
+.register-card-form button {
+  background: #0D47A1; 
+  color: white;
+  padding: 1rem;
+  border-radius: 100px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: background 0.5s;
+  border: none;
+}
+
+.register-card-form button:hover {
+  background-color: #1565C0; 
+  cursor: pointer;
+}
+
+.confirmation-steps ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.confirmation-steps li {
+  list-style-type: disc;
+  text-align: justify;
+}
+
+.register-card-header .confirmation-steps li:last-child {
+  margin-bottom: 0.5rem;
+}
+
+.register-card-header .form-item-icon {
+  margin-top: 1rem;
+  margin-right: 0.5rem; 
+}
+
+
+@media (max-width: 768px) {
+  body {
+    padding: 1rem;
+  }
+
+  .register-card {
+    width: 300px;
+    padding: 1rem;
+  }
+}
